@@ -1,0 +1,6 @@
+docker compose build
+docker compose up
+docker exec -it scrapy_project-postgres-1 bash
+psql -U user -d scrapydb
+\dt
+SELECT * FROM products;
